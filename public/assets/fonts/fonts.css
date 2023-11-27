@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Strech";
+    src: url('./StretchPro.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url('./HelveticaNeue.otf') format('opentype');
+}
