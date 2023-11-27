@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: "hooey";
+    src: url('./hooey.otf') format('opentype');
+}
+
+@font-face {
     font-family: "HelveticaNeue";
     src: url('./HelveticaNeue.otf') format('opentype');
 }
