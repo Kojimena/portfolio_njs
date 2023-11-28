@@ -27,7 +27,7 @@ const Menu = () => {
                 {menu.map((item, index) => (
                     <li key={index} className="mb-4 font-strech text-white text-2xl md:text-4xl uppercase hover:text-gray-400">
                         <Link href={item.url}>
-                            {item.name}
+                           <span className="font-hoey text-sm"> 0{index + 1}.</span> {item.name}
                         </Link>
                     </li>
                 ))}

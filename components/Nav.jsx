@@ -10,6 +10,9 @@ const Nav = () => {
             <Image src='/assets/images/logo.png'alt='logo' width={40} height={40} className='object-contain'/>
         </Link>
        <button className='flex gap-2 flex-end' >
+        <Link href='https://github.com/Kojimena'>
+            <Image src='/assets/icons/github.svg'alt='user' width={30} height={30} className='object-contain'/>
+        </Link>
         <Link href='/menu'>
             <Image src='/assets/icons/menuwhite.svg'alt='burger' width={40} height={40} className='object-contain'/>
         </Link>
