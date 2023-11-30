@@ -6,7 +6,7 @@ export const metadata = {
     title: 'Kojimena',
     description: 'Diseño y desarrollo de páginas web en Guatemala',
     url: 'https://kojimena.com',
-    image: 'https://kojimena.com/assets/images/logo.png',
+    image: '/assets/images/logo.png',
 }
 
 const RootLayout = ({children}) => {
