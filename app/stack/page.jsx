@@ -105,9 +105,9 @@ const Stack = () => {
     <div className='flex flex-col items-start justify-start w-full h-full'>
         <span className='text-4xl font-strech text-left text-white font-bold mt-6 md:mt-8 uppercase'>Stack</span>
         <div className='flex xs:items-start md:items-center justify-center gap-2 pt-8 md:pt-4 w-full'>
-            <button onClick={showFrameworks} className='btn bg-white text-black hover:bg-black hover:text-white uppercase'>Frameworks</button>
-            <button onClick={showTools} className='btn bg-white text-black hover:bg-black hover:text-white uppercase'>Tools</button>
-            <button onClick={showLanguages} className='btn bg-white text-black hover:bg-black hover:text-white uppercase'>Languages</button>
+            <button onClick={showFrameworks} className='btn bg-white text-black hover:bg-black hover:text-white uppercase font-hoey'>Frameworks</button>
+            <button onClick={showTools} className='btn bg-white text-black hover:bg-black hover:text-white uppercase font-hoey'>Tools</button>
+            <button onClick={showLanguages} className='btn bg-white text-black hover:bg-black hover:text-white uppercase font-hoey'>Languages</button>
         </div>
         <div className='flex xs:flex-col md:flex-wrap md:flex-row items-start justify-center gap-2 mt-8 md:mt-8 glassmorphism p-4 xs:w-full'>
             {

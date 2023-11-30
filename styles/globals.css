@@ -29,29 +29,47 @@
   background-color: #040404;
 }
 
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 0%, 100% 0%, 0% 100%, 100% 100%, 0% 50%, 50% 0%, 50% 100%;
+  }
+  50% {
+    background-position: 100% 100%, 0% 100%, 100% 0%, 0% 0%, 100% 50%, 50% 100%, 50% 0%;
+  }
+  100% {
+    background-position: 0% 0%, 100% 0%, 0% 100%, 100% 100%, 0% 50%, 50% 0%, 50% 100%;
+  }
+}
+
+
+
 .gradient {
   height: fit-content;
   z-index: 3;
   width: 100%;
-  max-width: 640px;
+
   background-image: radial-gradient(
       at 27% 37%,
       hsla(215, 98%, 61%, 1) 0px,
       transparent 0%
     ),
-    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
-    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
-    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
-    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
-    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
-    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+    radial-gradient(at 47% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 92% 99%, #78ffd1 0px, transparent 50%),
+    radial-gradient(at 10% 29%, rgb(61, 41, 243) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, #f0ffa6 0px, transparent 50%),
+    radial-gradient(at 93% 50%, #99b9ff 0px, transparent 50%),
+    radial-gradient(at 79% 53%, #ffb3c2 0px, transparent 50%),
+    radial-gradient(at 10% 0%, #f0ffa6 0px, transparent 50%);
   position: absolute;
   content: "";
   width: 100%;
+  filter: saturate(1.5);
   height: 100%;
-  filter: blur(100px) saturate(150%);
-  top: 80px;
-  opacity: 0.15;
+  top: 0px;
+  opacity: 0.25;
+  animation: moveGradient 20s linear infinite;
+  background-size: 300% 300%, 300% 300%, 200% 300%, 300% 300%, 300% 300%,
+    300% 300%, 300% 300%;
 }
 
 .app {
@@ -79,19 +97,23 @@
 }
 
 .head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-white sm:text-6xl;
 }
 
 .orange_gradient {
-  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-amber-100 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
 }
 
 .green_gradient {
-  @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-green-100 to-green-500 bg-clip-text text-transparent;
 }
 
 .blue_gradient {
   @apply bg-gradient-to-r from-blue-300 to-cyan-600 bg-clip-text text-transparent;
+}
+
+.purple_gradient {
+  @apply bg-gradient-to-r from-purple-300 to-indigo-600 bg-clip-text text-transparent;
 }
 
 .desc {
@@ -165,3 +187,23 @@
 .white-text {
   @apply text-white;
 }
+
+@keyframes fadeInBlur {
+  0% {
+      opacity: 0;
+      filter: blur(5px);
+  }
+  100% {
+      opacity: 1;
+      filter: blur(0);
+  }
+}
+
+.white-text {
+  animation: fadeInBlur 3s ease-in-out forwards;
+}
+
+.fontstrech {
+  font-stretch: extra-expanded;
+}
+

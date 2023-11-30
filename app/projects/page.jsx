@@ -110,7 +110,7 @@ const Projects = () => {
             <div className="flex justify-center w-full py-2 gap-2 xs:flex-wrap">
                 {
                     arrayWork.map((work) => (
-                        <a key={work.id} href={`#${work.id}`} className="btn btn-xs bg-white text-black hover:bg-black hover:text-white hover:shadow-lg">{work.name}</a>
+                        <a key={work.id} href={`#${work.id}`} className="font-hoey flex justify-center items-center btn-xs glassmorphism text-white hover:bg-black hover:text-white hover:shadow-lg">{work.name}</a>
                     ))
                 }
             </div>
