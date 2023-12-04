@@ -1,5 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
+import dynamic from 'next/dynamic';
+import Map from '@/components/Map';
+
 
 const Contact = () => {
   return (
@@ -42,6 +45,9 @@ const Contact = () => {
           height={30}
         />
       </a>
+      <div className='flex flex-col items-center justify-center w-full h-full'>
+        <Map/>
+      </div>
     </div>
   )
 }
