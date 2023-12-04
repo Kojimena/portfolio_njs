@@ -19,7 +19,7 @@ import {
             style={{
                 width: "100%",
                 height: "auto",
-                pointerEvents: "none" // Desactivar eventos de interacción
+                pointerEvents: "none" 
               }}
         >
             
@@ -35,7 +35,7 @@ import {
           }
         </Geographies>
         <Annotation
-        subject={[-90.51327, 14.63491]} // Coordenadas de Ciudad de Guatemala
+        subject={[-90.51327, 14.63491]} 
         dx={-90}
         dy={-30}
         connectorProps={{

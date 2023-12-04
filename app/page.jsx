@@ -1,9 +1,11 @@
-import Image from 'next/image'
+"use client";
+import Cube from "@/components/Cube";
+import Image from "next/image";
 
 const Home = () => {
 
   return (
-    <section className="w-full flex flex-col justify-end items-center h-full homecursor">
+    <section className="w-full flex flex-col justify-center items-center h-full">
         <h1 className="flex flex-col text-center">
           <span className="font-strech head_text">I&apos;M JIMENA ORTEGA</span>
           <br className="" />
@@ -27,7 +29,12 @@ const Home = () => {
             About me
           </a>
         </div>
-        <Image src="/assets/images/profilepic.png" alt="Jimena Ortega" width={400} height={400} className="" />
+        <div className="relative w-full h-full flex justify-center items-center mt-2">
+          <div className="absolute w-full h-full bottom-0">
+            <Cube />
+          </div>
+            <Image src="/assets/images/profilepic.png" alt="Jimena Ortega" width={350} height={350} className="absolute bottom-0" />
+        </div>
     </section>
   )
 }

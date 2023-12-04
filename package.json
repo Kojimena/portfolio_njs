@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.90.0",
+    "@react-three/fiber": "^8.15.12",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
     "react-simple-maps": "^3.0.0",
     "react-typing-effect": "^2.0.5",
+    "three": "^0.159.0",
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
