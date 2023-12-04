@@ -13,11 +13,11 @@ const Cube = () => {
               <OrbitControls enableZoom={false} />
               <ambientLight intensity={1} />
               <directionalLight position={[10, 10, 5]} intensity={1} />
-              <Sphere args={[1, 100, 400]} scale={2.2}>
+              <Sphere args={[1, 100, 400]} scale={2.4}>
                 <MeshDistortMaterial
                   color="#fff"
-                  distort={0.8}
-                  speed={2}
+                  distort={0.6}
+                  speed={0.8}
                   roughness={0.2}
                   metalness={0.4}
                 />
