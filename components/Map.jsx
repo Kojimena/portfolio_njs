@@ -23,7 +23,11 @@ import {
               }}
         >
             
-        <Geographies geography="/features.json">
+        <Geographies geography="/features.json"
+        fill="transparent"
+        stroke="#FFFFFF"
+        strokeWidth={0.5}
+        >
           {({ geographies }) =>
             geographies.map((geo) => (
               <Geography key={geo.rsmKey} geography={geo} />
@@ -40,7 +44,7 @@ import {
           strokeLinecap: "round"
         }}
       >
-        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white">
+        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white" fontFamily="hooey">
           {"I'm here"}
         </text>
       </Annotation>
