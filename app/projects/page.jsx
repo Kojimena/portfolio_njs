@@ -93,6 +93,11 @@ const Projects = () => {
             name: "Nacion Sushi",
             image: "/assets/projectImages/nc.png",
             id: "item8"
+        },
+        {
+            name: "MCN",
+            image: "/assets/projectImages/mcn.png",
+            id: "item9"
         }
         ]
   return (
