@@ -1,6 +1,6 @@
+"use client"
 import React from 'react'
 import ProjectItem from '@/components/ProjectItem'
-
 const Projects = () => {
     const arrayProjects = [
         {
@@ -57,47 +57,56 @@ const Projects = () => {
         {
           name : "Banky",
           image : "/assets/projectImages/banky.png",
-          id: "item1"
+          id: "item1",
+          url:"https://bankychat.com/"
         },
         {
           name : "Luka",
           image : "/assets/projectImages/luka.png",
-          id: "item2"
+          id: "item2",
+          url:"https://luka.gt/"
         },
         {
           name : "La Pista",
           image : "/assets/projectImages/lapista.png",
-          id: "item3"
+          id: "item3",
+          url:"https://lapista.gt/"
         },
         {
             name : "Diseño de portafolio",
             image : "/assets/projectImages/portfolio1.png",
-            id: "item4"
+            id: "item4",
+            url: "https://www.figma.com/file/GEO4qG5W3g8GNyMXVvRcrP/ANGELCAS-PORTFOLIO?type=design&node-id=0%3A1&mode=design&t=hfuRm3MNtqZLRbw9-1",
         },
         {
             name : "Paez",
             image : "/assets/projectImages/paez.png",
-            id: "item5"
+            id: "item5",
+            url:"https://paez.com/"
         },
         {
             name : "YVM",
             image : "/assets/projectImages/yvm.png",
-            id: "item6"
+            id: "item6",
+            url:"https://yovotomejor.com/"
         },
         {
             name: "La Tavola",
             image: "/assets/projectImages/tavola.png",
-            id: "item7"
+            id: "item7",
+            url:"https://shop.latavolabistro.com/"
         },
         {
             name: "Nacion Sushi",
             image: "/assets/projectImages/nc.png",
-            id: "item8"
+            id: "item8",
+            url:"https://nacion.delivery/"
         },
         {
             name: "MCN",
             image: "/assets/projectImages/mcn.png",
-            id: "item9"
+            id: "item9",
+            url:"https://mcn.org.gt/"
         }
         ]
   return (
@@ -106,8 +115,11 @@ const Projects = () => {
         <div className="carousel w-full">
             {
                 arrayWork.map((work) => (
-                    <div key={work.id} id={work.id} className="carousel-item w-full">
+                    <div key={work.id} id={work.id} className="carousel-item w-full relative">
                         <img src={work.image} className="w-full h-62 md:h-96 object-cover rounded-md my-4" alt={work.name} />
+                        <button className="absolute top-8 right-2 rounded-full p-1 bg-white text-black hover:bg-black hover:text-white" onClick={() => window.open(work.url, "_blank")}>
+                          <svg width="24px" height="24px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#ffffff" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9 4.45962C9.91153 4.16968 10.9104 4 12 4C16.1819 4 19.028 6.49956 20.7251 8.70433C21.575 9.80853 22 10.3606 22 12C22 13.6394 21.575 14.1915 20.7251 15.2957C19.028 17.5004 16.1819 20 12 20C7.81811 20 4.97196 17.5004 3.27489 15.2957C2.42496 14.1915 2 13.6394 2 12C2 10.3606 2.42496 9.80853 3.27489 8.70433C3.75612 8.07914 4.32973 7.43025 5 6.82137" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="#000000" stroke-width="1.5"></path> </g></svg>
+                        </button>
                     </div>
                 ))
             }
