@@ -100,21 +100,6 @@
   @apply mt-5 text-5xl font-extrabold leading-[1.15] text-white sm:text-6xl;
 }
 
-.orange_gradient {
-  @apply bg-gradient-to-r from-amber-100 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
-}
-
-.green_gradient {
-  @apply bg-gradient-to-r from-green-100 to-green-500 bg-clip-text text-transparent;
-}
-
-.blue_gradient {
-  @apply bg-gradient-to-r from-blue-300 to-cyan-600 bg-clip-text text-transparent;
-}
-
-.purple_gradient {
-  @apply bg-gradient-to-r from-purple-300 to-indigo-600 bg-clip-text text-transparent;
-}
 
 .desc {
   @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
@@ -129,7 +114,7 @@
 }
 
 .glassmorphism {
-  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+  @apply rounded-xl bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur;
 }
 
 .prompt_layout {
@@ -207,3 +192,18 @@
   font-stretch: extra-expanded;
 }
 
+.animation{
+  @apply md:transition-transform md:duration-500 md:ease-in-out md:transform md:hover:scale-105 md:hover:z-10;
+}
+
+.main_button{
+  @apply bg-transparent flex justify-center items-center uppercase text-white hover:shadow-lg hover:rounded-full hover:transform hover:scale-110 hover:bg-black hover:text-white hover:p-2 font-hoey font-bold;
+}
+
+.secondary_button{
+  @apply px-4 py-2 flex justify-center items-center uppercase text-white rounded-full hover:transform scale-110 font-hoey font-bold bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur;
+}
+
+.btn_active{
+  @apply bg-black text-white;
+}

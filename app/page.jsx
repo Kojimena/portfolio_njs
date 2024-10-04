@@ -20,10 +20,10 @@ const Home = () => {
         </h1>
         <span className="font-hoey text-gray-400 text-center xs:text-xl md:text-2xl font-bold ">(made in Guatemala)</span>
         <div className="flex flex-row justify-center items-center gap-2 pt-8 md:pt-6 w-full gap-8">
-          <a href='/projects' className="bg-transparent flex justify-center items-center uppercase text-white hover:shadow-lg hover:rounded-full hover:transform hover:scale-110 hover:bg-black hover:text-white hover:p-2 font-hoey font-weight-800">
+          <a href='/projects' className="main_button">
             Projects
           </a>
-          <a href='/about' className="bg-transparent flex justify-center items-center uppercase text-white hover:shadow-lg hover:rounded-full hover:transform hover:scale-110 hover:bg-black hover:text-white hover:p-2 font-hoey font-weight-800">
+          <a href='/about' className="main_button">
             About me
           </a>
         </div>
