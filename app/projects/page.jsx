@@ -6,6 +6,7 @@ import { FaRegEye } from "react-icons/fa6";
 const Projects = () => {
     const arrayProjects = [
         {
+          id: "project1",
           name: "Whapay",
           image: "/assets/projectImages/whapay.png",
           url: "https://www.figma.com/proto/20wdWCAaeyTwJZTuuRIwps/whatsapp.ut-(Community)?page-id=0%3A1&type=design&node-id=105-231&viewport=510%2C182%2C0.2&t=20PAb6Jzt5vncuzG-1&scaling=scale-down&starting-point-node-id=2%3A180&mode=design",
@@ -13,6 +14,7 @@ const Projects = () => {
           tags : ["Figma", "UI/UX"]
         },
         {
+          id: "project2",
           name: "Steam for moms",
           image: "/assets/projectImages/steam.png",
           url: "https://www.figma.com/proto/0Hm4NfpNN7W0rnHoOQnr7z/Steam-UI-(Community)?page-id=0%3A1&type=design&node-id=1-2&viewport=393%2C49%2C0.12&t=bscTc3pCC6t2cSRb-1&scaling=scale-down&starting-point-node-id=220%3A4&mode=design",
@@ -20,6 +22,7 @@ const Projects = () => {
           tags : ["Figma", "UI/UX"]
         },
         {
+          id: "project3",
           name: "Coffee machine",
           image: "/assets/projectImages/coffee.png",
           url: "https://github.com/Kojimena/WEB-L4",
@@ -27,6 +30,7 @@ const Projects = () => {
           tags : ["HTML", "CSS"]
         },
         {
+          id: "project4",
           name: "Github in React",
           image: "/assets/projectImages/github.png",
           url: "https://incredible-lollipop-630aec.netlify.app",
@@ -34,6 +38,7 @@ const Projects = () => {
           tags : ["React"]
         },
         {
+          id: "project5",
           name: "Calculator",
           image: "/assets/projectImages/calculator.png",
           url: "https://fabulous-crostata-9abe88.netlify.app",
@@ -41,6 +46,7 @@ const Projects = () => {
           tags : ["React", "Vitest"]
         },
         {
+          id: "project6",
           name: "Uniempleos",
           image: "/assets/projectImages/uniempleos.png",
           url: "https://uniempleos.netlify.app/",
@@ -51,131 +57,152 @@ const Projects = () => {
 
     const arrayWork = [
         {
+          id: "work1",
           name : "Banky",
           image : "/assets/projectImages/banky.png",
-          id: "item1",
           url:"https://bankychat.com/",
           tags : ["React", "NodeJS"]
 
         },
         {
+          id: "work2",
           name : "Luka",
           image : "/assets/projectImages/luka.png",
-          id: "item2",
           url:"https://luka.gt/",
           tags : ["React", "NodeJS"]
         },
         {
+          id: "work3",
           name : "La Pista",
           image : "/assets/projectImages/lapista.png",
-          id: "item3",
           url:"https://lapista.gt/",
           tags : ["React", "NodeJS"]
         },
         {
-            name : "Diseño de portafolio",
-            image : "/assets/projectImages/portfolio1.png",
-            id: "item4",
-            url: "https://www.figma.com/file/GEO4qG5W3g8GNyMXVvRcrP/ANGELCAS-PORTFOLIO?type=design&node-id=0%3A1&mode=design&t=hfuRm3MNtqZLRbw9-1",
-            tags : ["Figma", "UI/UX"]
+          id: "work4",
+          name : "Diseño de portafolio",
+          image : "/assets/projectImages/portfolio1.png",
+          url: "https://www.figma.com/file/GEO4qG5W3g8GNyMXVvRcrP/ANGELCAS-PORTFOLIO?type=design&node-id=0%3A1&mode=design&t=hfuRm3MNtqZLRbw9-1",
+          tags : ["Figma", "UI/UX"]
         },
         {
-            name : "Paez",
-            image : "/assets/projectImages/paez.png",
-            id: "item5",
-            url:"https://paez.com/",
-            tags : ["Shopify", "Liquid", "E-commerce"]
+          id: "work5",
+          name : "Paez",
+          image : "/assets/projectImages/paez.png",
+          url:"https://paez.com/",
+          tags : ["Shopify", "Liquid", "E-commerce"]
         },
         {
-            name : "YVM",
-            image : "/assets/projectImages/yvm.png",
-            id: "item6",
-            url:"https://yovotomejor.com/",
-            tags : ["Shopify", "Liquid"]
+          id: "work6",
+          name : "YVM",
+          image : "/assets/projectImages/yvm.png",
+          url:"https://yovotomejor.com/",
+          tags : ["Shopify", "Liquid"]
         },
         {
-            name: "La Tavola",
-            image : "/assets/projectImages/tavola.png",
-            id: "item7",
-            url:"https://shop.latavolabistro.com/",
-            tags : ["Shopify", "Liquid"]
+          id: "work7",
+          name: "La Tavola",
+          image : "/assets/projectImages/tavola.png",
+          url:"https://shop.latavolabistro.com/",
+          tags : ["Shopify", "Liquid"]
         },
         {
-            name: "Nacion Sushi",
-            image : "/assets/projectImages/nc.png",
-            id: "item8",
-            url:"https://nacion.delivery/",
-            tags : ["Shopify", "Liquid"]
+          id: "work8",
+          name: "Nacion Sushi",
+          image : "/assets/projectImages/nc.png",
+          url:"https://nacion.delivery/",
+          tags : ["Shopify", "Liquid"]
         },
         {
-            name: "MCN",
-            image : "/assets/projectImages/mcn.png",
-            id: "item9",
-            url:"https://mcn.org.gt/",
-            tags : ["Shopify", "Liquid"]
+          id: "work9",
+          name: "MCN",
+          image : "/assets/projectImages/mcn.png",
+          url:"https://mcn.org.gt/",
+          tags : ["Shopify", "Liquid"]
         },
         {
-            name: "Novo",
-            image : "/assets/projectImages/novo.png",
-            id: "item10",
-            url:"https://grupo-novo.com/",
-            tags : ["Shopify", "Liquid"]
+          id: "work10",
+          name: "Novo",
+          image : "/assets/projectImages/novo.png",
+          url:"https://grupo-novo.com/",
+          tags : ["Shopify", "Liquid"]
         },
         {
+          id: "work11",
           name: "Paliare",
           image: "/assets/projectImages/paliare.png",
-          id: "item11",
           url:"https://paliarestudio.com/",
           tags : ["NextJS", "React"]
         },
         {
+          id: "work12",
           name: "GarooInc",
           image: "/assets/projectImages/garooinc.png",
-          id: "item12",
           url:"https://garooinc.com/",
           tags : ["NextJS", "React"]
         },
         {
+          id: "work13",
           name: "CritiqStars",
-          image : "/assets/projectImages/critiqstars.png",
-          id: "item13",
+          image: "/assets/projectImages/critiqstars.png",
           url:"https://critiqstars.com/",
-          tags : ["NextJS", "React", , "UI/UX"]
+          tags : ["NextJS", "React", "UI/UX"]
         },
         {
+          id: "work14",
           name: "Boquiteo",
           image : "/assets/projectImages/boquiteo.png",
-          id: "item14",
           url:"https://boquiteo.com/",
           tags : ["Shopify", "Liquid"]
         },
         {
+          id: "work15",
           name: "Lacoste",
           image : "/assets/projectImages/lacoste.png",
-          id: "item15",
           url:"https://riposto.com.gt/",
           tags : ["Shopify", "Liquid"]
         },
         {
+          id: "work16",
           name: "Volviendo a Latir",
           image : "/assets/projectImages/aldo.png",
-          id: "item16",
           url:"https://volviendoalatir.com/",
           tags : ["Shopify", "Liquid"]
         },
         {
+          id: "work17",
           name: "Bloque",
           image : "/assets/projectImages/bloque.png",
-          id: "item17",
           url:"https://bloque.gt/",
           tags : ["Shopify", "Liquid"]
         },
         {
+          id: "work18",
           name: "Prodisa",
           image : "/assets/projectImages/prodisa.png",
-          id: "item18",
           url:"https://prodisa.com.gt/",
           tags : ["NextJS", "React", "UI/UX"]
+        },
+        {
+          id: "work19",
+          name: "Itzana Room Directory",
+          image : "/assets/projectImages/itzana.png",
+          url:"https://itzana.room-directory.com/en",
+          tags : ["NextJS", "React"]
+        },
+        {
+          id: "work20",
+          name: "Kaana Room Directory",
+          image : "/assets/projectImages/kaana.png",
+          url:"https://kaana.room-directory.com/en",
+          tags : ["NextJS", "React"]
+        },
+        {
+          id: "work21",
+          name: "Rock n Rolla",
+          image : "/assets/projectImages/rocknrolla.png",
+          url:"https://rocknrolla23.com/",
+          tags : ["NextJS", "React"]
         }
         ]
 

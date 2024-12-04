@@ -1,5 +1,4 @@
 "use client";
-import Cube from "@/components/Cube";
 import Image from "next/image";
 
 const Home = () => {
